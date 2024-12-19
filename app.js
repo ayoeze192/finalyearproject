@@ -13,8 +13,8 @@ const auth = require("./routes/auth");
 const cors = require("cors");
 
 mongoose.connect(
-  // "mongodb+srv://Ayoeze191:75739768jc@cluster0.ipkimb3.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
-  "mongodb://localhost:27017"
+  "mongodb+srv://Ayoeze191:75739768jc@cluster0.ipkimb3.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+  // "mongodb://localhost:27017"
 );
 app.use(morgan("dev"));
 app.use("/uploads", express.static("uploads")); 
