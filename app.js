@@ -3,15 +3,15 @@ const app = express();
 const morgan = require("morgan");
 const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
-const doctor = require("./routes/Doctors");
+const doctor = require("./routes/doctors");
 const admin = require("./routes/admin");
 const profile = require("./routes/profile");
-const pharm = require("./routes/Pharmarcist")
+const pharm = require("./routes/pharmarcist")
 
 const appointment = require("./routes/Appointment");
 const auth = require("./routes/auth");
 const cors = require("cors");
-
+ 
 mongoose.connect(
   "mongodb+srv://Ayoeze191:75739768jc@cluster0.ipkimb3.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
   // "mongodb://localhost:27017"
