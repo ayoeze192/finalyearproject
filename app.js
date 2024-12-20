@@ -23,7 +23,7 @@ app.use(bodyParser.json());
 // Configure CORS to allow all origins and credentials
 app.use(
   cors({
-    origin: true,  // Allow all origins
+    origin: "http://localhost:3000",    // Allow all origins
     credentials: true,  // Allow credentials (cookies, authorization headers)
   })
 );
